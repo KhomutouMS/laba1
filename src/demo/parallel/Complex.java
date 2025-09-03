@@ -45,7 +45,9 @@ package demo.parallel;
  * @author Alexander Kouznetsov, Tristan Yan
  */
 public class Complex {
-    
+
+    public double real;
+    public double imag;
     private double re;   // the real part
     private double im;   // the imaginary part
 
