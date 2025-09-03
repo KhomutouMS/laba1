@@ -70,7 +70,14 @@ public class Complex {
         im += b.im;
         return this;
     }
-
+    // Возведение в степень (целое число)
+    public Complex pow(int n) {
+        Complex result = new Complex(1, 0);
+        for (int i = 0; i < n; i++) {
+            result = result.times(this);
+        }
+        return result;
+    }
     /**
      * Multiply operation.
      * @param  b multiplier
